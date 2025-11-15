@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="77e4370493197210318bf0ba2bba10e2" label="Contact" max_length="40" name="x_1507361_job_trac_contact" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="4000" name="notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Phone Number" max_length="50" name="phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Company" max_length="200" name="company" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LinkedIn Profile" max_length="500" name="linkedin_profile" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Contact Name" mandatory="true" max_length="200" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Position/Title" max_length="200" name="position" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="200" name="email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="other" label="Contact Type" max_length="100" name="contact_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Recruiter" sequence="0" value="recruiter"/>
+                <element inactive_on_update="false" label="Other" sequence="4" value="other"/>
+                <element inactive_on_update="false" label="Hiring Manager" sequence="1" value="hiring_manager"/>
+                <element inactive_on_update="false" label="HR Representative" sequence="2" value="hr_representative"/>
+                <element inactive_on_update="false" label="Referral" sequence="3" value="referral"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="dfe4370493197210318bf0ba2bba1070" label="Job Application" max_length="40" name="x_1507361_job_trac_job_application" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Job Title" mandatory="true" max_length="200" name="job_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job Posting Link" max_length="500" name="job_posting_link" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Salary Offered" max_length="100" name="salary_offered" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Application Date" mandatory="true" max_length="40" name="application_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="4000" name="notes" type="string"/>
+        <element choice="1" default="medium" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+            </choice>
+        </element>
+        <element choice="1" default="applied" label="Application Status" mandatory="true" max_length="40" name="application_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Applied" sequence="0" value="applied"/>
+                <element inactive_on_update="false" label="Withdrawn" sequence="4" value="withdrawn"/>
+                <element inactive_on_update="false" label="Interviewing" sequence="1" value="interviewing"/>
+                <element inactive_on_update="false" label="Offered" sequence="2" value="offered"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Job Platform" max_length="32" name="job_platform" reference="x_1507361_job_trac_job_platform" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Company Name" mandatory="true" max_length="200" name="company_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact Person Name" max_length="200" name="contact_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Benefits" max_length="2000" name="benefits" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Job Description" max_length="4000" name="job_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact Email" max_length="200" name="contact_email" type="string"/>
+        <element choice="1" default="unknown" label="Work-Life Balance" max_length="40" name="work_life_balance" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Average" sequence="2" value="average"/>
+                <element inactive_on_update="false" label="Poor" sequence="3" value="poor"/>
+                <element inactive_on_update="false" label="Unknown" sequence="4" value="unknown"/>
+                <element inactive_on_update="false" label="Excellent" sequence="0" value="excellent"/>
+                <element inactive_on_update="false" label="Good" sequence="1" value="good"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Primary Contact" max_length="32" name="primary_contact" reference="x_1507361_job_trac_contact" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Job Location" max_length="200" name="job_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact Phone" max_length="50" name="contact_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other Perks" max_length="1000" name="other_perks" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Interview Date" max_length="40" name="interview_date" type="glide_date"/>
+        <index name="index">
+            <element name="job_platform"/>
+        </index>
+        <index name="index2">
+            <element name="primary_contact"/>
+        </index>
+    </element>
+</database>

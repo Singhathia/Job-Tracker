@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_1507361_job_trac.user" name="x_1507361_job_trac.user">c5c2e9a4cc9743dcaf72dee4c3fab519</contains>
+        <role display_value="x_1507361_job_trac.admin" name="x_1507361_job_trac.admin">5eb431af34684fa784af36efb92c1658</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-14 14:09:46</sys_created_on>
+        <sys_id>8acd8290cae141dda5814ab32cb5e207</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1507361_job_trac.user.x_1507361_job_trac.admin</sys_name>
+        <sys_package display_value="Job Tracker" source="x_1507361_job_trac">c74de34493d57210318bf0ba2bba10c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Job Tracker">c74de34493d57210318bf0ba2bba10c5</sys_scope>
+        <sys_update_name>sys_user_role_contains_8acd8290cae141dda5814ab32cb5e207</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-14 14:09:46</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

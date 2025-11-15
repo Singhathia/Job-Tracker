@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "serialNumber": "urn:uuid:73972a24-41bd-47f5-9715-2087407f6b8b",
+  "metadata": {
+    "timestamp": "2025-11-15T05:19:28.951Z",
+    "tools": {
+      "components": [
+        {
+          "type": "library",
+          "name": "sdk-build-plugins",
+          "group": "@servicenow",
+          "version": "4.0.2",
+          "author": "ServiceNow"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "x-1507361-job-tracker",
+      "version": "1.0.0",
+      "bom-ref": "pkg:servicenow/x-1507361-job-tracker@1.0.0?sys_scope_id=c74de34493d57210318bf0ba2bba10c5",
+      "description": "[BUILD AGENT GENERATED]:  Track job applications, manage contacts, and analyze job search progress",
+      "licenses": [
+        {
+          "license": {
+            "name": "UNLICENSED"
+          }
+        }
+      ],
+      "purl": "pkg:servicenow/x-1507361-job-tracker@1.0.0?sys_scope_id=c74de34493d57210318bf0ba2bba10c5"
+    }
+  },
+  "components": [],
+  "dependencies": [
+    {
+      "ref": "pkg:servicenow/x-1507361-job-tracker@1.0.0?sys_scope_id=c74de34493d57210318bf0ba2bba10c5"
+    }
+  ]
+}]]></content>
+        <external_source>false</external_source>
+        <path>x_1507361_job_trac/x-1507361-job-tracker/1.0.0/bom.json</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-14 14:09:46</sys_created_on>
+        <sys_id>8bacef5783f34e54b6303d9a92ac62f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1507361_job_trac/x-1507361-job-tracker/1.0.0/bom.json</sys_name>
+        <sys_package display_value="Job Tracker" source="x_1507361_job_trac">c74de34493d57210318bf0ba2bba10c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Job Tracker">c74de34493d57210318bf0ba2bba10c5</sys_scope>
+        <sys_update_name>sys_module_8bacef5783f34e54b6303d9a92ac62f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-14 14:09:46</sys_updated_on>
+    </sys_module>
+</record_update>

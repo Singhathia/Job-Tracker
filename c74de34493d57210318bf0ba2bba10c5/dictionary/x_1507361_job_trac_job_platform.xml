@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="bbe4770493197210318bf0ba2bba1071" label="Job Platform" max_length="40" name="x_1507361_job_trac_job_platform" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Platform Name" mandatory="true" max_length="200" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Website URL" max_length="500" name="website_url" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+    </element>
+</database>

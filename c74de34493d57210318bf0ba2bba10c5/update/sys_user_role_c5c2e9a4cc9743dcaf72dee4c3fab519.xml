@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Basic user role for Job Tracker application - can manage their own job applications, contacts, and tasks</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1507361_job_trac.user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-14 14:09:46</sys_created_on>
+        <sys_id>c5c2e9a4cc9743dcaf72dee4c3fab519</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1507361_job_trac.user</sys_name>
+        <sys_package display_value="Job Tracker" source="x_1507361_job_trac">c74de34493d57210318bf0ba2bba10c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Job Tracker">c74de34493d57210318bf0ba2bba10c5</sys_scope>
+        <sys_update_name>sys_user_role_c5c2e9a4cc9743dcaf72dee4c3fab519</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-14 14:09:46</sys_updated_on>
+    </sys_user_role>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="bfe4770493197210318bf0ba2bba1028" label="Job Task" max_length="40" name="x_1507361_job_trac_task" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="2000" name="description" type="string"/>
+        <element attributes="encode_utf8=false" label="Related Job Application" max_length="32" name="related_job_application" reference="x_1507361_job_trac_job_application" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element label="Completed" max_length="40" name="completed" type="boolean"/>
+        <element choice="1" default="medium" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Task Title" mandatory="true" max_length="200" name="title" type="string"/>
+        <element choice="1" default="not_started" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Not Started" sequence="0" value="not_started"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="related_job_application"/>
+        </index>
+    </element>
+</database>
